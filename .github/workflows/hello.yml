@@ -1,0 +1,17 @@
+# Workflow
+# Should have name
+name: Hello
+
+# on tells when the wrokflow should run
+on: 
+  workflow_dispatch: 
+
+
+# Job tells what the workflow should do, there can be one or more than one jobs, hence we write jobs
+jobs:
+  # 1st Job
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to everyone
+        run: echo " Hello from Github Actions "
